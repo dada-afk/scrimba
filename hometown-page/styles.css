@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: "Roboto", serif;
+}
+
+#header {
+    background-image: url("images/budapest.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#title, #caption {
+    border-radius: 10px;
+    margin: 0 auto;
+    color: white;
+}
+
+#title {
+    font-size: 3rem;
+    background: #E76F51;
+    width: 15%;
+    margin-bottom: 1em;
+    padding: 5px 10px;
+}
+
+#caption {
+    font-size: 2rem;
+    background: #F4A261;
+    padding: 8px 16px;
+    width: 50%;
+}
+
+.activity-img {
+    border-radius: 50%;
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+}
+
+.activity-img:hover {
+    filter: grayscale(90%);
+}
+
+#activity-section {
+    background-color: #EEDEB5;
+    height: 75vh;
+    color: #264653;
+}
+
+#activity-header {
+    font-size: 3rem;
+    margin: 0;
+    padding: 5rem 0 3rem 0;
+}
+
+.activity {
+    width: 20rem;
+}
+
+#activities {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#guide-section {
+    height: 50vh;
+    margin: 0;
+    color: #264653;
+}
+
+#guide-card {
+    width: 35rem;
+    height: 20rem;
+    background: #E9C46A;
+    padding: 3rem;
+    display: flex;
+    margin: 20rem auto;
+    border-bottom: 10px solid #264653;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+#avatar {
+    width: 20rem;
+    padding: 0 50px 0 0;
+}
+
+#guide-name {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 1rem;
+}
+
+#signature {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+#guide-card:hover {
+    transform: scale(110%);
+}

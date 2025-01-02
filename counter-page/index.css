@@ -1,0 +1,46 @@
+body {
+    background-image: url("stars.jpg");
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    font-family: Oxygen, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+button {
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    border-radius: 30px;
+}
+
+#increment-btn {
+    background: darkgoldenrod;
+}
+
+#save-btn {
+    background: saddlebrown;
+}
+
+.max-width {
+    max-width: 2000px;
+}
