@@ -41,6 +41,6 @@ button {
     background: saddlebrown;
 }
 
-.max-width {
-    max-width: 2000px;
+.container {
+    max-width: 3000px;
 }
