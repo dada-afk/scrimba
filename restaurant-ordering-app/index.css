@@ -1,0 +1,230 @@
+/* 
+gray: #525252
+black: #242424
+green dark: #006d77
+*/
+
+html {
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f5f3f4;
+    color: #242424;
+    height: 100vh;
+}
+
+.width {
+    width: 30vw;
+    margin: 0 auto;
+}
+
+.item,
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25vw;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Header */
+
+h1 {
+    margin: 0;
+    top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+h1, header p {
+    position: absolute;
+    left: 2rem;
+    color: #f5f3f4;
+}
+
+header p {
+    font-weight: 300;
+    top: 3rem;
+    font-size: 0.7rem;
+}
+
+header {
+    height: 16rem;
+}
+
+.header-img {
+    height: 10rem;
+    background: url('./images/sneakers.jpg');
+    background-size: contain;
+    background-position: center;
+}
+
+.container {
+    height: 6rem;
+    background: #242424;
+    position: absolute;
+    top: 10rem;
+}
+
+/* Items section */
+
+.item-details {
+    display: flex;
+    align-items: center;
+}
+
+.item-emoji {
+    font-size: 5.6rem;
+    padding-right: 5rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+h3 {
+    margin: 0.5rem 0;
+}
+
+.item-material {
+    font-size: 0.7rem;
+    margin: 0;
+}
+
+.add-btn {
+    border: 1px solid #525252;
+    background: #e5e5e5;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    padding: 0.5rem 1rem;
+}
+
+.add-btn:hover,
+.add-btn:active {
+    background: #cce3de;
+    cursor: pointer;
+}
+
+.item {
+    height: 10rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* Order section */
+
+.order-title,
+.total {
+    text-align: center;
+}
+
+.order-item {
+    height: 2rem;
+}
+
+.order-container {
+    display: flex;
+    align-items: center;
+}
+
+.remove-btn {
+    border: none;
+    background: none;
+    color: #525252;
+    margin-left: 1rem;
+}
+
+.remove-btn:hover,
+.remove-btn:active {
+    color: #d90429;
+    cursor: pointer;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    width: 25vw;
+    margin: 0 auto;
+}
+
+.btn {
+    width: 26vw;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn,
+.pay-btn {
+    background: #00774f;
+    color: #f5f3f4;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    border-radius: 3rem;
+    border: none;
+}
+
+.btn:hover,
+.btn:active,
+.pay-btn:hover,
+.pay-btn:active {
+    background: #019463;
+}
+
+/* Modal */
+
+form {
+    background: white;
+    height: 35rem;
+    width: 35rem;
+    position: absolute;
+    inset: 20vh 0;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 15px #292929;
+}
+
+legend {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+input {
+    display: block;
+    width: 25rem;
+    margin: 1.2rem auto;
+    padding: 1rem;
+}
+
+.pay-btn {
+    background: #00774f;
+    color: #f5f3f4;
+    width: 28rem;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    border-radius: 3rem;
+    border: none;
+}
+
+/* Order completed text */
+
+.order-completed {
+    height: 4rem;
+    width: 27vw;
+    background: #afecd8;
+    color: #00774f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto;
+    position: static;
+    font-weight: 600;
+}

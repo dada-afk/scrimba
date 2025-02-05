@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Link CSS -->
+        <link rel="stylesheet" href="index.css">
+        <!-- Link Roboto font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <title>Cecee's Clothing Store</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+            <header class="width">
+                <div class="header-img width"></div>
+                <div class="container width">
+                    <h1>Cecee's Clothing Store</h1>
+                    <p>Most stylish clothes in town.</p>
+                </div>
+            </header>
+
+            <section id="items-section" class="width">
+                <!-- Render items here -->
+            </section>
+
+            <section>
+                <div id="order-completed-text" class="text"></div>
+            </section>
+
+            <section class="width" id="order-section">
+                <h2 class="order-title" id="order-title"></h2>
+                <div id="order-items">
+                    <!-- Render order details here -->
+                </div>
+                
+                <div id="total-price" class="total"></div>
+                <div id="order-btn-container"></div>
+            </section>
+
+            <section id="modal" class="hidden">
+                <form id="submit-form">
+                    <legend>Enter card details</legend>
+                    <input type="text" placeholder="Enter your name" id="user-name" required>
+                    <input type="text" placeholder="Enter card number" id="card-number" required>
+                    <input type="number" placeholder="Enter CVV" min="100" max="999" id="cvv" required>
+                    <input type="Submit" value="Pay" class="pay-btn" id="pay-btn">
+                </form>
+            </section>
+        
+	    <script src="index.js" type="module"></script>
+    </body>
+</html>
+
