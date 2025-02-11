@@ -1,0 +1,251 @@
+*, *::before, *::after {
+    margin: 0;
+}
+
+body {
+    font-family: 'Source Sans 3', sans-serif;
+    color: #0E0E0E;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.875rem;
+}
+
+/* --- NAV SECTION --- */
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2em;
+    list-style-type: none;
+    margin: 0 1em;
+    position: relative;
+    padding: 1em;
+}
+
+nav a {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    text-decoration: none;
+    color: #0E0E0E;
+    font-weight: 600;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    position: absolute;
+    inset: 1em 0 1em;
+    z-index: -1;
+}
+
+/* --- TYPOGRAPHY --- */
+
+.date {
+    font-size: 0.75rem;
+    margin: 1em 0;
+}
+
+h2 {
+    font-size: 1.75em;
+    line-height: 1;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    margin: 1em 0;
+}
+
+.recent {
+    text-align: center;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.blog-text {
+    margin-top: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* --- HERO SECTION --- */
+
+.hero {
+    color: whitesmoke;
+    background: url('./images/article-image-hero.png');
+    background-size: cover;
+    width: 100%;
+}
+
+.hero-text-container {
+    padding: 2em 1em;
+}
+
+/* --- ARTICLES --- */
+
+.article-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.grid-item,
+.about-me-section {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.more-link {
+    font-weight: 700;
+    text-decoration: underline;
+    text-align: center;
+    display: block;
+    margin-bottom: 2em;
+}
+
+/* --- ABOUT ME --- */
+
+.portrait {
+    border-radius: 50%;
+    border: 2px dashed #202020;
+    max-width: 182px;
+    width: 60%;
+}
+
+/* --- FOOTER --- */
+
+footer {
+    background: #202020;
+    color: whitesmoke;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+.copyright {
+    font-weight: 700;
+}
+
+.copyright span {
+    font-weight: 300;
+    display: block;
+}
+
+/* --- MEDIA QUERIES --- */
+
+@media (min-width: 769px) {
+
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    nav {
+        max-width: 2000px;
+        margin: 0 auto;
+    }
+
+    nav a,
+    h1,
+    body {
+        font-size: 1.2rem;
+    }
+
+    .hero {
+        min-height: 500px;
+    }
+
+    .hero-text-container {
+        padding-top: 12em;
+        padding-right: 8em;
+    }
+
+    .blog-text {
+        margin-bottom: 1em;
+    }
+
+    .hero-main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            "hero hero hero"
+            "rece rece rece"
+            "ione itwo three";
+    }
+
+    .index-main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            "hero hero hero"
+            "ione itwo three"
+            "four five isix"
+            "more more more";
+    }
+
+    .about-main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            "abou abou abou"
+            "rece rece rece"
+            "ione itwo three";
+    }
+
+    .hero-section {
+        grid-area: hero;
+    }
+
+    .about-me-section {
+        grid-area: abou;
+    }
+
+    .recent {
+        grid-area: rece;
+    }
+
+    .item-1 {
+        grid-area: ione;
+    }
+
+    .item-2 {
+        grid-area: itwo;
+    }
+
+    .item-3 {
+        grid-area: three;
+    }
+
+    .item-4 {
+        grid-area: four;
+    }
+
+    .item-5 {
+        grid-area: five;
+    }
+
+    .item-6 {
+        grid-area: isix;
+    }
+
+    .more-link {
+        grid-area: more;
+    }
+
+    .introduction {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 1em;
+    }
+
+}
