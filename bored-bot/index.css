@@ -1,0 +1,61 @@
+html, body {
+    margin: 0;
+    padding: 10px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+button {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #ffba08;
+    border: 3px solid #ca6702;
+    cursor: pointer;
+    outline: none;
+}
+
+main {
+    background: #161a1d;
+    height: 80%;
+    width: 70%;
+    border-radius: 30px;
+    flex-direction: column;
+    gap: 2em;
+    border: 6px solid #f4f3ee;
+}
+
+h1,
+p {
+    background: #f4f3ee;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    width: 70%;
+    min-height: 10%;
+    line-height: 1.5;
+}
+
+.fun {
+    /* CSS generated from https://uigradients.com */
+    background: #fc4a1a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
