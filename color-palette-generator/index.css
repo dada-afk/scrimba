@@ -1,0 +1,90 @@
+*, *::after, *::before {
+    margin: 0;
+}
+
+* {
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background-color: #1F2937;
+    color: #D5D4D8;
+    font-family: 'Outfit', sans-serif;
+}
+
+main,
+header {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+select,
+.get-scheme-btn {
+    font-family: 'Outfit', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+p {
+    flex: 1;
+    text-align: center;
+    padding: 1.5em;
+    background-color: #1F2937;
+}
+
+/* --- HEADER --- */
+
+header {
+    padding-top: 5em;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    gap: 0.5em;
+    justify-content: space-between;
+    height: 2.5rem;
+    margin: 0.75em;
+}
+
+.color-picker {
+    width: 10%;
+    height: inherit;
+}
+
+select {
+    flex: 1;
+    width: 60%;
+    border: solid 1px #D5D4D8;
+    border-radius: 5px;
+    background: none;
+    color: #D5D4D8;
+}
+
+option {
+    background-color: #1F2937;
+}
+
+.get-scheme-btn {
+    background-color: #3D4B60;
+    border: none;
+    border-radius: 5px;
+    color: #D5D4D8;
+    font-size: 0.85rem;
+}
+
+/* --- COLORS --- */
+
+.colors {
+    height: 70vh;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
